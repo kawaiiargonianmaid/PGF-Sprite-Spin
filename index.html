@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Image Viewer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/spritespin@4.0.8/release/spritespin.min.js"></script>
+</head>
+<body>
+    <div id="spritespin" style="width: 500px; height: 500px;"></div>
+    <script>
+        $(document).ready(function(){
+            $('#spritespin').spritespin({
+                source: 'https://images.squarespace-cdn.com/content/645148bc013ff73c26e31197/8bdccacd-4a33-4c48-a05c-309b01aea9aa/pink.jpg?content-type=image%2Fjpeg', //
+                width: 500,
+                height: 500,
+                frames: 11,
+                columns: 5,
+                sense: -1,
+                animate: true,
+                loop: true
+            });
+        });
+    </script>
+</body>
+</html>
